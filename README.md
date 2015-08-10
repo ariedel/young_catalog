@@ -1,7 +1,9 @@
 # young_catalog 
 
 Contains:
+
 young.master.2015.0512 is the version published in LACEwING
+
 young.master.2015.0801 has new parallaxes from Erini Lambrides.
 
 This is the Catalog of Suspected Young Stars from Riedel et al. (2015) (at time of paper submission).
@@ -17,13 +19,21 @@ The .csv file is probably easier to read into a program. Code for using Python 2
 
 from astropy.io import ascii
 
+
 file = open(infilename,'rb')
+
 readtable = ascii.get_reader(Reader=ascii.Basic)
+
 readtable.header.splitter.delimiter = ','
+
 readtable.data.splitter.delimiter = ','
+
 readtable.header.start_line = 1
+
 readtable.data.start_line = 3
+
 catalog = readtable.read(file)
+
 file.close()
 
 A simpler method might be to open the .csv file in a text editor, chop out the first (sections) and third (units) lines of the 3-line header. Reading would be easier:
