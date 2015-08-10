@@ -1,5 +1,9 @@
 # young_catalog 
 
+Contains:
+young.master.2015.0512 is the version published in LACEwING
+young.master.2015.0801 has new parallaxes from Erini Lambrides.
+
 This is the Catalog of Suspected Young Stars from Riedel et al. (2015) (at time of paper submission).
 
 The catalog is meant to contain astrometric, photometric, and basic spectroscopic information for all stars EVER reported as being young (and nearby, with a rough outer limit of 100 parsecs plus the Pleiades and stars in the Octans moving group (both extend beyond 100 parsecs) plus field stars included in papers presenting young stars, or considered and rejected in those papers. Basically, if the star's youth was ever under consideration, this catalog should have it.
