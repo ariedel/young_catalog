@@ -10,6 +10,8 @@ young.master.2015.1216 has eight new papers of data, cleaned up X-ray and UV dat
 
 young.master.2015.1229 has renamed headers to better conform to AAS Journal standards. Several unused and redundant columns have been removed. All stars now have names (finally) and a generally better set of GJ, HD, HR, and DM (BD/SD/CD/CPD) names. There has been further data cleanup, and joint photometry flags are now more consistently applied. Five duplicate entries have been removed. (5195 objects, 358 columns)
 
+young.master.2016.0116 has headers that ACTUALLY conform to AAS Journal standards. Several less-important or empty columns were removed for the journal's machine-readable table. (5195 objects, 358 columns for ODS, XLSX, CSV; 339 columns for AAS-formatted DAT)
+
 This is the Catalog of Suspected Young Stars from Riedel et al. (2016) (at time of paper submission).
 
 The catalog is meant to contain astrometric, photometric, and basic spectroscopic information for all stars EVER reported as being young (and nearby, with a rough outer limit of 100 parsecs plus the Pleiades and stars in the Octans moving group (both extend beyond 100 parsecs) plus field stars included in papers presenting young stars, or considered and rejected in those papers. Basically, if the star's youth was ever under consideration, this catalog should have it.
@@ -20,27 +22,6 @@ The catalog currently contains 5195 stars, in a one-line-per-star format, with 3
 * Properties of companions that were simply copied from the primary star are in bold. For instance, if all that's known is that the star is a binary, EVERYTHING should be bolded. The procedure upon discovering a companion is to copy the entire primary star's line and bold it, and then replace those values with the ones specific to the secondary.
 
 The .csv file is probably easier to read into a program. Code for using Python 2.7+ and Astropy 0.4+ to produce a Python table is below:
-
-from astropy.io import ascii
-
-
-file = open(infilename,'rb')
-
-readtable = ascii.get_reader(Reader=ascii.Basic)
-
-readtable.header.splitter.delimiter = ','
-
-readtable.data.splitter.delimiter = ','
-
-readtable.header.start_line = 0
-
-readtable.data.start_line = 1
-
-catalog = readtable.read(file)
-
-file.close()
-
-Note that the .csv files have only the middle line of the 3-line header present in the .ods files. It may be possible to read them in with this simpler code:
 
 from astropy.io import ascii
 
