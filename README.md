@@ -20,6 +20,7 @@ The catalog currently contains 5195 stars, in a one-line-per-star format, with 3
 * Color-coded sections
 * In-sheet calculations for derived quantities like Mean RV, Mean Parallax, and most photometric colors.
 * Properties of companions that were simply copied from the primary star are in bold. For instance, if all that's known is that the star is a binary, EVERYTHING should be bolded. The procedure upon discovering a companion is to copy the entire primary star's line and bold it, and then replace those values with the ones specific to the secondary.
+* Note that the OpenDocument and Excel files have two extra header lines as compared to the CSV
 
 The .csv file is probably easier to read into a program. Code for using Python 2.7+ and Astropy 0.4+ to produce a Python table is below:
 
