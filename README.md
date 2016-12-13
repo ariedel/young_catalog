@@ -18,7 +18,7 @@ young.master.2016.1011 is a cleaned-up version of the 0704 version. 5350 objects
 
 young.master.2016.1118 is a further cleaned version of the 0704 version. 5350 objects, 388 columns for ODS, CSV, XLSX
 
-This is the Catalog of Suspected Young Stars from Riedel et al. (2016) (at time of paper submission).
+This is the Catalog of Suspected Young Stars from Riedel et al. (2017) (at time of paper submission).
 
 The catalog is meant to contain astrometric, photometric, and basic spectroscopic information for all stars EVER reported as being young (and nearby, with a rough outer limit of 100 parsecs plus the Pleiades and stars in the Octans moving group (both extend beyond 100 parsecs) plus field stars included in papers presenting young stars, or considered and rejected in those papers. Basically, if the star's youth was ever under consideration, this catalog should have it.
 
